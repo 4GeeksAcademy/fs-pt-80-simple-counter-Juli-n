@@ -1,10 +1,12 @@
 import React from "react";
 import { Contador } from "./contador";
 
+
 const Home = ({ counter }) => {
   const formatDigits = (counter) => {
     return String(counter).padStart(6, "0").split("").map(Number);
   };
+
 
   const digitsArray = formatDigits(counter);
 
@@ -17,5 +19,6 @@ const Home = ({ counter }) => {
     </div>
   );
 };
+
 
 export default Home;
